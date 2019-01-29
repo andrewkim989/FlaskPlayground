@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Playground Template</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                /*border: dotted 1px red;*/
+            }
+            #wrapper{
+                width: 1000px;
+                margin: 0px auto;
+            }
+            #top {
+                text-align: center;
+                padding-top: 20px;
+            }
+            h3 {
+                padding-top: 20px;
+            }
+            #main {
+                margin-top: 30px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            #box {
+                background-color: lightblue;
+                margin: 10px;
+                height: 300px;
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "wrapper">
+            <div id = "top">
+                <h1>Welcome!</h1>
+                <h3>Type in '/' followed by a number to display that number of blocks on this site.</h3>
+                <h3>Type in '/' and a color name afterwards to change the blocks to that color.</h3>
+            </div>
+            <div id = "main">
+                {% for x in range(num): %}
+                <div id = "box" style = "background: {{color}}"></div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+    
+</html>
